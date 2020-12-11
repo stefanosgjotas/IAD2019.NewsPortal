@@ -1,0 +1,10 @@
+// USE
+//
+// @include debug() {
+//   xxx: xxx;
+// }
+@mixin debug() {
+  html.debug & {
+    @content;
+  }
+}

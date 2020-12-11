@@ -1,0 +1,46 @@
+// Titel
+
+// je nach Viewport möchte ich eine verschieden stark ansteigende Titelei
+$font-scale--default: 1.12;
+$font-scale--m: 1.2;
+$font-scale--l: 1.25;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1rem * $font-scale--default * $font-scale--default;
+  margin-bottom: 3em;
+
+  @include media(m) {
+    font-size: 1rem * $font-scale--m * $font-scale--m;
+  }
+
+  @include media(l) {
+    font-size: 1rem * $font-scale--l * $font-scale--l;
+  }
+}
+
+h2 {
+  font-size: 1rem * $font-scale--default;
+
+  @include media(m) {
+    font-size: 1rem * $font-scale--m;
+  }
+
+  @include media(l) {
+    font-size: 1rem * $font-scale--l;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+}

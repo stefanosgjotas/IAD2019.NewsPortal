@@ -1,0 +1,17 @@
+.like__btn {
+  color: inherit;
+  border: 0;
+  box-shadow: none;
+  background-color: #dddddd;
+  text-shadow: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  line-height: inherit;
+  font-size: inherit;
+  font-family: inherit;
+
+  &:focus {
+    outline: 0 !important;
+  }
+}

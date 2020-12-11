@@ -1,0 +1,90 @@
+// 12er Column-Grid
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 3%;
+
+  // visualisierung der Columns
+  @include debug() {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGZpbGw9J3JnYmEoMjMzLCAzMCwgOTksIDAuMSknPjxzdHlsZT48IVtDREFUQVsKICAgICAgICAgICAgbGluZSB7CiAgICAgICAgICAgICAgc3Ryb2tlOiByZ2JhKDEyOCwwLDAsMC4wNSk7CiAgICAgICAgICAgICAgc3Ryb2tlLXdpZHRoOiAxOwogICAgICAgICAgICB9CiAgICAgICAgICAgIF1dPjwvc3R5bGU+IDxyZWN0IHg9JzAlJyB3aWR0aD0nNS41ODMzMzMzMzMzMzMzMzMlJyBoZWlnaHQ9JzEwMCUnIC8+PGxpbmUgeDE9JzIuNzkxNjY2NjY2NjY2NjY2NSUnIHkxPScwJyB4Mj0nMi43OTE2NjY2NjY2NjY2NjY1JScgeTI9JzEwMCUnIC8+PGxpbmUgeDE9JzcuMDgzMzMzMzMzMzMzMzMzJScgeTE9JzAnIHgyPSc3LjA4MzMzMzMzMzMzMzMzMyUnIHkyPScxMDAlJyAvPjxyZWN0IHg9JzguNTgzMzMzMzMzMzMzMzMyJScgd2lkdGg9JzUuNTgzMzMzMzMzMzMzMzMzJScgaGVpZ2h0PScxMDAlJyAvPjxsaW5lIHgxPScxMS4zNzQ5OTk5OTk5OTk5OTglJyB5MT0nMCcgeDI9JzExLjM3NDk5OTk5OTk5OTk5OCUnIHkyPScxMDAlJyAvPjxsaW5lIHgxPScxNS42NjY2NjY2NjY2NjY2NjQlJyB5MT0nMCcgeDI9JzE1LjY2NjY2NjY2NjY2NjY2NCUnIHkyPScxMDAlJyAvPjxyZWN0IHg9JzE3LjE2NjY2NjY2NjY2NjY2NCUnIHdpZHRoPSc1LjU4MzMzMzMzMzMzMzMzMyUnIGhlaWdodD0nMTAwJScgLz48bGluZSB4MT0nMTkuOTU4MzMzMzMzMzMzMzMyJScgeTE9JzAnIHgyPScxOS45NTgzMzMzMzMzMzMzMzIlJyB5Mj0nMTAwJScgLz48bGluZSB4MT0nMjQuMjQ5OTk5OTk5OTk5OTk2JScgeTE9JzAnIHgyPScyNC4yNDk5OTk5OTk5OTk5OTYlJyB5Mj0nMTAwJScgLz48cmVjdCB4PScyNS43NDk5OTk5OTk5OTk5OTYlJyB3aWR0aD0nNS41ODMzMzMzMzMzMzMzMzMlJyBoZWlnaHQ9JzEwMCUnIC8+PGxpbmUgeDE9JzI4LjU0MTY2NjY2NjY2NjY2NCUnIHkxPScwJyB4Mj0nMjguNTQxNjY2NjY2NjY2NjY0JScgeTI9JzEwMCUnIC8+PGxpbmUgeDE9JzMyLjgzMzMzMzMzMzMzMzMzJScgeTE9JzAnIHgyPSczMi44MzMzMzMzMzMzMzMzMyUnIHkyPScxMDAlJyAvPjxyZWN0IHg9JzM0LjMzMzMzMzMzMzMzMzMzJScgd2lkdGg9JzUuNTgzMzMzMzMzMzMzMzMzJScgaGVpZ2h0PScxMDAlJyAvPjxsaW5lIHgxPSczNy4xMjQ5OTk5OTk5OTk5OSUnIHkxPScwJyB4Mj0nMzcuMTI0OTk5OTk5OTk5OTklJyB5Mj0nMTAwJScgLz48bGluZSB4MT0nNDEuNDE2NjY2NjY2NjY2NjY0JScgeTE9JzAnIHgyPSc0MS40MTY2NjY2NjY2NjY2NjQlJyB5Mj0nMTAwJScgLz48cmVjdCB4PSc0Mi45MTY2NjY2NjY2NjY2NjQlJyB3aWR0aD0nNS41ODMzMzMzMzMzMzMzMzMlJyBoZWlnaHQ9JzEwMCUnIC8+PGxpbmUgeDE9JzQ1LjcwODMzMzMzMzMzMzMzJScgeTE9JzAnIHgyPSc0NS43MDgzMzMzMzMzMzMzMyUnIHkyPScxMDAlJyAvPjxsaW5lIHgxPSc1MCUnIHkxPScwJyB4Mj0nNTAlJyB5Mj0nMTAwJScgLz48cmVjdCB4PSc1MS41JScgd2lkdGg9JzUuNTgzMzMzMzMzMzMzMzMzJScgaGVpZ2h0PScxMDAlJyAvPjxsaW5lIHgxPSc1NC4yOTE2NjY2NjY2NjY2NjQlJyB5MT0nMCcgeDI9JzU0LjI5MTY2NjY2NjY2NjY2NCUnIHkyPScxMDAlJyAvPjxsaW5lIHgxPSc1OC41ODMzMzMzMzMzMzMzMzYlJyB5MT0nMCcgeDI9JzU4LjU4MzMzMzMzMzMzMzMzNiUnIHkyPScxMDAlJyAvPjxyZWN0IHg9JzYwLjA4MzMzMzMzMzMzMzMzNiUnIHdpZHRoPSc1LjU4MzMzMzMzMzMzMzMzMyUnIGhlaWdodD0nMTAwJScgLz48bGluZSB4MT0nNjIuODc1JScgeTE9JzAnIHgyPSc2Mi44NzUlJyB5Mj0nMTAwJScgLz48bGluZSB4MT0nNjcuMTY2NjY2NjY2NjY2NjclJyB5MT0nMCcgeDI9JzY3LjE2NjY2NjY2NjY2NjY3JScgeTI9JzEwMCUnIC8+PHJlY3QgeD0nNjguNjY2NjY2NjY2NjY2NjclJyB3aWR0aD0nNS41ODMzMzMzMzMzMzMzMzMlJyBoZWlnaHQ9JzEwMCUnIC8+PGxpbmUgeDE9JzcxLjQ1ODMzMzMzMzMzMzM0JScgeTE9JzAnIHgyPSc3MS40NTgzMzMzMzMzMzMzNCUnIHkyPScxMDAlJyAvPjxsaW5lIHgxPSc3NS43NSUnIHkxPScwJyB4Mj0nNzUuNzUlJyB5Mj0nMTAwJScgLz48cmVjdCB4PSc3Ny4yNSUnIHdpZHRoPSc1LjU4MzMzMzMzMzMzMzMzMyUnIGhlaWdodD0nMTAwJScgLz48bGluZSB4MT0nODAuMDQxNjY2NjY2NjY2NjclJyB5MT0nMCcgeDI9JzgwLjA0MTY2NjY2NjY2NjY3JScgeTI9JzEwMCUnIC8+PGxpbmUgeDE9Jzg0LjMzMzMzMzMzMzMzMzMzJScgeTE9JzAnIHgyPSc4NC4zMzMzMzMzMzMzMzMzMyUnIHkyPScxMDAlJyAvPjxyZWN0IHg9Jzg1LjgzMzMzMzMzMzMzMzMzJScgd2lkdGg9JzUuNTgzMzMzMzMzMzMzMzMzJScgaGVpZ2h0PScxMDAlJyAvPjxsaW5lIHgxPSc4OC42MjUlJyB5MT0nMCcgeDI9Jzg4LjYyNSUnIHkyPScxMDAlJyAvPjxsaW5lIHgxPSc5Mi45MTY2NjY2NjY2NjY2NiUnIHkxPScwJyB4Mj0nOTIuOTE2NjY2NjY2NjY2NjYlJyB5Mj0nMTAwJScgLz48cmVjdCB4PSc5NC40MTY2NjY2NjY2NjY2NiUnIHdpZHRoPSc1LjU4MzMzMzMzMzMzMzMzMyUnIGhlaWdodD0nMTAwJScgLz48bGluZSB4MT0nOTcuMjA4MzMzMzMzMzMzMzMlJyB5MT0nMCcgeDI9Jzk3LjIwODMzMzMzMzMzMzMzJScgeTI9JzEwMCUnIC8+PC9zdmc+");
+    background-size: 100% 100%;
+    background-position: center 0;
+    background-repeat: repeat-y;
+    background-color: rgba(255, 255, 102, 0.15);
+  }
+}
+
+// Visualisierung der Columns
+div[class^="column-"],
+div[class^="card-"] {
+  @include debug() {
+    background-color: rgba(255, 255, 0, 0.3);
+    border: 1px solid rgba(255, 0, 0, 0.8);
+    min-height: 3rem;
+  }
+}
+
+.column-12 {
+  grid-column: span 12;
+}
+
+.column-1 {
+  grid-column: span 12;
+  @include media(m) {
+    grid-column: span 1;
+  }
+}
+
+.column-2 {
+  grid-column: span 12;
+  @include media(m) {
+    grid-column: span 2;
+  }
+}
+
+.column-3 {
+  grid-column: span 12;
+  @include media(m) {
+    grid-column: span 3;
+  }
+}
+
+.column-4 {
+  grid-column: span 12;
+  @include media(m) {
+    grid-column: span 4;
+  }
+}
+
+.column-5to12 {
+  grid-column-start: 2;
+  grid-column-end: span 11;
+  @include media(m) {
+    grid-column-start: 5;
+    grid-column-end: span 8;
+  }
+}
+
+// 12er × 12er Grid
+.grid-12-6 {
+  grid-auto-flow: dense;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0.5rem;
+  grid-template-rows: repeat(6, 1fr);
+  grid-row-gap: 0.5rem;
+  height: 20rem;
+}
+
+.card-2-4 {
+  grid-column: span 2;
+  grid-row: span 4;
+  background-color: grey;
+}
+
+.card-4-2 {
+  grid-column: span 4;
+  grid-row: span 2;
+  background-color: grey;
+}

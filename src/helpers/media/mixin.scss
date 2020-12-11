@@ -1,0 +1,29 @@
+// USE
+//
+// @include media(m) {
+//   xxx: xxx;
+// }
+//
+// @include media(l) {
+//   xxx: xxx;
+// }
+
+$breakpoints--default: 0;
+$breakpoints--m: 700px;
+$breakpoints--l: 1024px;
+
+@mixin media($point) {
+  @if $point == m {
+    @media (min-width: $breakpoints--m) {
+      @content;
+    }
+  } @else if $point == l {
+    @media (min-width: $breakpoints--l) {
+      @content;
+    }
+  } @else if $point == ie11 {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @content;
+    }
+  }
+}

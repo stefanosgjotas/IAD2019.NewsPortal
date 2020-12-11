@@ -1,0 +1,21 @@
+// Haupt SCSS
+// Hier werden alle weiteren SCSS geladen.
+
+// for media-query
+@import "./helpers/media/mixin";
+
+// components
+@import "./components/Debug/mixin";
+@import "./components/_root";
+@import "./components/body";
+@import "./components/Debug/styles";
+@import "./components/heading";
+@import "./components/a";
+@import "./components/p";
+@import "./components/image";
+@import "./components/container";
+@import "./components/grid";
+@import "./components/Menu/styles";
+
+// kleiner Test-Text
+@import "./components/teaser";
